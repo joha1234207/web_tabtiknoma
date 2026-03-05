@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #efefef;
+    overflow-x: hidden;
+}
+
+header {
+    background: rgba(255, 182, 193, 0.4); /* Pushti rang */
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    backdrop-filter: blur(10px); /* Blur effekt */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+section {
+    margin-top: 120px;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgba(255, 182, 193, 0.5); /* Pushti */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 1.6em;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+}
+
+section p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 2;
+    text-align: start;
+    font-family: 'Verdana', sans-serif;
+}
+
+button {
+    background-color: #FFB6C1;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #FF69B4;
+    transform: scale(1.1);
+}
+
+.tablik-img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+}

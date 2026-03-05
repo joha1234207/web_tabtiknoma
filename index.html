@@ -3,65 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laylo</title>
-    <style>
-        body {
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            background: url('https://example.com/stars_background.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: white;
-        }
-        h1 {
-            font-size: 48px;
-            text-align: center;
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 20px;
-            cursor: pointer;
-            background-color: rgba(255, 255, 0, 0.8);
-            border: none;
-            border-radius: 5px;
-        }
-    </style>
+    <title>Laylo uchun Tabriknoma</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Laylo Bayramingiz Muborak!</h1>
-    <button id="celebrateButton">Bayramni Nishonlash!</button>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvas-confetti/1.4.0/confetti.browser.min.js"></script>
-    <script>
-        document.getElementById("celebrateButton").addEventListener("click", function() {
-            var duration = 3 * 1000; // 3 seconds
-            var end = Date.now() + duration;
+    <header>
+        <h1>Tabriklaymiz!</h1>
+    </header>
 
-            var colors = ["#bb0000", "#ffffff", "#00bb00", "#0000bb"];
-            (function frame() {
-                confetti({
-                    particleCount: 5,
-                    angle: 60,
-                    spread: 55,
-                    origin: { x: 0 },
-                    colors: colors
-                });
-                confetti({
-                    particleCount: 5,
-                    angle: 120,
-                    spread: 55,
-                    origin: { x: 1 },
-                    colors: colors
-                });
+    <section class="tabrik">
+        <h2>Tabrik So'zlari</h2>
+        <p>🌟 Laylo apcha, tug'ilgan kuningiz muborak! 🎂✨<br>
+Bugun sizning eng go'zal kuningiz, barcha orzularingiz ro'yobga chiqsin! 💖🌸<br>
+Yangi yoshingizda baxt, sog'liq va muvaffaqiyat siz bilan bo'lsin! Har bir kuningiz shunchalik go'zal bo'lsin, doimo quvonchda yashang! 🌈🌷<br>
+Sizga muhabbat va tinchlik tilayman, har bir kuningiz yuksak yutuqlar bilan to'lsin. 🥳💐<br>
+🎁 Yangi yosh — yangi imkoniyatlar, yangi orzular! 🎁<br>
+🌟 Tabriklar, Laylo apcha! 🎉 Doimo baxtli va quvnoq bo'ling! 💫🌟</p>
+       
+    </section>
 
-                if (Date.now() < end) {
-                    requestAnimationFrame(frame);
-                }
-            })();
-        });
-    </script>
+    <section class="image">
+        <h2>Tug'ilgan Kun Tabrig'i</h2>
+        <img src="https://www.pexels.com/photo/close-up-photo-of-purple-and-yellow-gift-box-1560299/" alt="Tug'ilgan Kun" class="tabrik-img">
+        <p>Yangi yoshda baxt va omad tilayman!</p>
+    </section>
+
+    <section class="heart">
+        <h2>Yurakdagi Gaplar</h2>
+        <p>Yurakdagi gaplar... ❤️ Ba'zan so'zlar yetarli bo'lmaydi, chunki yurakda bo'ladigan tuyg'ularni ifodalashning o'zi juda qiyin. Sizni har doim yodda saqlash, har bir kulishingizni quvonch bilan eslab qolish — bu meni baxtli qiladi. Yurakdagi eng chiroyli hislar — bu muhabbat, do'stlik va sadoqat. Haqiqiy hislar ko'rsatilgan so'zlardan ko'ra ko'proqdir. Bizning aloqamizda eng go'zal narsa — bir-birimizni tushunish va qo'llab-quvvatlash. Ba'zan birgina qarash yoki birgina kulgu, butun dunyoni o'zgartirishi mumkin. Sizga barcha yurakdan minnatdorchiliklarimni bildiraman, doim yonimda bo'lishingiz uchun! 💖</p>
+    </section>
 </body>
 </html>
