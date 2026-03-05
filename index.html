@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laylo</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: url('https://example.com/stars_background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        h1 {
+            font-size: 48px;
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: rgba(255, 255, 0, 0.8);
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Laylo Bayramingiz Muborak!</h1>
+    <button id="celebrateButton">Bayramni Nishonlash!</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/canvas-confetti/1.4.0/confetti.browser.min.js"></script>
+    <script>
+        document.getElementById("celebrateButton").addEventListener("click", function() {
+            var duration = 3 * 1000; // 3 seconds
+            var end = Date.now() + duration;
+
+            var colors = ["#bb0000", "#ffffff", "#00bb00", "#0000bb"];
+            (function frame() {
+                confetti({
+                    particleCount: 5,
+                    angle: 60,
+                    spread: 55,
+                    origin: { x: 0 },
+                    colors: colors
+                });
+                confetti({
+                    particleCount: 5,
+                    angle: 120,
+                    spread: 55,
+                    origin: { x: 1 },
+                    colors: colors
+                });
+
+                if (Date.now() < end) {
+                    requestAnimationFrame(frame);
+                }
+            })();
+        });
+    </script>
+</body>
+</html>
